@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedInclone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+<div class="search-box">
+    <img src="images/search.png">
+    <input type="text" placeholder="Discover">
+</div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"> <span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!--profile-drop-down-menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.jpg">
+                    <div>
+                        <h3>Sonish Shrestha</h3>
+                        <a href="#">View my profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#"class="profile-menu-link">
+                <img src="images/setting.png">
+                <p>Settings & Privacy</p>
+                <span>></span>
+                </a>
+                <a href="#"class="profile-menu-link">
+                <img src="images/help.png">
+                <p>Help & Support</p>
+                <span>></span>
+                </a>
+                <a href="#"class="profile-menu-link">
+                <img src="images/display.png">
+                <p>Diaplay & Accessibility</p>
+                <span>></span>
+                </a>
+                <a href="#"class="profile-menu-link">
+                <img src="images/logout.png">
+                <p>Logout</p>
+                <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+<!---- navbar close -----> 
+<div class="container">
+    <div class="profile-main">
+        <div class="profile-container">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="profile-container-inner">
+                <img src="images/user-1.jpg" class="profile-pic">
+                <h1>Sonish Shrestha</h1>
+                <b>Student at Georgian@Ilac | Computer Programming</b>
+                <p>Toronto, Canada &middot; <a href="#">Contact info</a></p>
+                <div class="mutual-connection">
+                    <img src="images/user-2.jpg">
+                    <span>1 mutual connection: Georgian@Ilac</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                    <a href="#"><img src="images/chat.png">Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-description">
+            <h2>About</h2>
+            <p>I am Sonish Shrestha a young, energetic and self-driven individual enrolled in computer programming course at Georgian@Ilac. I currently on first semester and I learning about web development and its fundamentals.</p>
+            <a href="#" class="see-more-link">See more...</a>
+        </div>
+
+        <div class="profile-description">
+            <h2>Experience</h2>
+            <div class="profile-desc-row">
+                <img src="images/microsoft.png">
+                <div>
+                 <h3>Intern font-end develper</h3>
+                 <b>Microsoft &middot; full-time</b>
+                 <b>January2024 - Present</b>
+                 <p>Computer programming is the process of writing the language that the computer can understand in most comfortable way which can be understood by both humans and computers.</p>
+                 <hr> 
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--profile-sidebar-->
+    <div class="profile-sidebar"></div>
+</div>
+
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu")
+    }
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

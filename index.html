@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedInclone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+<div class="search-box">
+    <img src="images/search.png">
+    <input type="text" placeholder="Discover">
+</div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/network.png"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"> <span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!--profile-drop-down-menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.jpg">
+                    <div>
+                        <h3>Sonish Shrestha</h3>
+                        <a href="#">View my profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#"class="profile-menu-link">
+                <img src="images/setting.png">
+                <p>Settings & Privacy</p>
+                <span>></span>
+                </a>
+                <a href="#"class="profile-menu-link">
+                <img src="images/help.png">
+                <p>Help & Support</p>
+                <span>></span>
+                </a>
+                <a href="#"class="profile-menu-link">
+                <img src="images/display.png">
+                <p>Diaplay & Accessibility</p>
+                <span>></span>
+                </a>
+                <a href="#"class="profile-menu-link">
+                <img src="images/logout.png">
+                <p>Logout</p>
+                <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+<!---- navbar close -----> 
+<div class="conatiner">
+    <!---left-sdiebar-->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="images/user-1.jpg">
+                <h1>Sonish Shrestha</h1>
+                <h3>Student at Georgian@Ilac</h3>
+                <ul>
+                    <li>Your profile views<span>52</span></li>
+                    <li>Your post views<span>810</span></li>
+                    <li>Your connections<span>205</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="images/items.png">My items</a>
+                <a href="#"><img src="images/premium.png">Try Premium</a>
+            </div>
+        </div>
+<div class="sidebar-activity">
+    <h3>RECENT</h3>
+    <a href="#"><img src="images/recent.png"> Web Development</a>
+    <a href="#"><img src="images/recent.png"> User Interface</a>
+    <a href="#"><img src="images/recent.png"> Online Learning</a>
+    <a href="#"><img src="images/recent.png"> Learn Online</a>
+    <a href="#"><img src="images/recent.png"> Code Better</a>
+    <a href="#"><img src="images/recent.png"> Group Learning</a>
+    <h3>GROUP</h3>
+    <a href="#"><img src="images/group.png"> Web Design Group</a>
+    <a href="#"><img src="images/group.png"> HTML & CSS Group</a>
+    <a href="#"><img src="images/group.png"> Python & JavaScript Group</a>
+    <a href="#"><img src="images/group.png"> Learn Code Group</a>
+    <h3>HASTAG</h3>
+    <a href="#"><img src="images/hashtag.png"> webdevelopment</a>
+    <a href="#"><img src="images/hashtag.png"> userinterface</a>
+    <a href="#"><img src="images/hashtag.png"> onlinelearning</a>
+    <div class="discover-more-link">
+        <a href="#">Discover more</a>
+    </div>
+</div>
+</div>
+    <!--main-content-->
+    <div class="main-content">
+
+       <div class="create-post">
+        <div class="create-post-input">
+            <img src="images/user-1.jpg">
+            <textarea rows="2" placeholder="Write a post"></textarea>
+        </div>
+        <div class="create-post-links">
+            <li><img src="images/photo.png">Photo</li>
+            <li><img src="images/video.png">Video</li>
+            <li><img src="images/event.png">Event</li>
+            <li>Post</li>
+        </div>
+       </div>
+       <div class="sort-by">
+        <hr>
+        <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+       </div>
+
+       <div class="post">
+        <div class="post-author">
+            <img src="images/user-2.jpg">
+            <div>
+                <h1>Georgian@Ilac</h1>
+                <small>College/University | Public</small>
+                <small>2 hours ago</small>
+            </div>
+        </div>
+        <p>Prepare to dominate the battleground!
+            Join 100 students on campus for an epic online gaming showdown. Download the app now, register, and claim your spot to win incredible prizes! 
+            When? Wednesday, April 10, 2024 @ 3:00 pm to 7:00 pm
+            Where? Growth Campus</p>
+        <img src="images/post-image-1.jpg" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="images/thumbsup.png">
+                <img src="images/love.png">
+                <img src="images/clap.png">
+                <span class="liked-users">Kushal Dahal and 98 others </span>
+            </div>
+            <div>
+                <span>50 comments &middot; 60 shares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+            <div>
+                <img src="images/user-1.jpg" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>Send</span>
+            </div>
+        </div>
+
+       </div>
+       <div class="post">
+        <div class="post-author">
+            <img src="images/user-3.jpg">
+            <div>
+                <h1>Immigration Refugee and Citizenship Canada</h1>
+                <small>Government Agency | Canada</small>
+                <small>January 22</small>
+            </div>
+        </div>
+        <p>On January 22, 2024, IRCC confirmed that international graduates of college programs delivered through a public-private curriculum licensing arrangement would no longer be eligible for a post-graduation work permit. This change will take effect on May 15, 2024, rather than the previously announced date of September 1, 2024. This means that international students who begin this type of program on May 15, 2024, or later will not be eligible for a post-graduation work permit when they graduate.</p>
+        <img src="images/post-image-2.jpg" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="images/thumbsup.png">
+                <img src="images/love.png">
+                <img src="images/clap.png">
+                <span class="liked-users">Jagadish Dadal and 2578 others </span>
+            </div>
+            <div>
+                <span>679 comments &middot; 251 shares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+            <div>
+                <img src="images/user-1.jpg" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>Send</span>
+            </div>
+        </div>
+
+       </div>
+       <div class="post">
+        <div class="post-author">
+            <img src="images/user-4.png">
+            <div>
+                <h1>NASA - National Aeronautics and Space Administration </h1>
+                <small>Government Organization | USA</small>
+                <small>April 1</small>
+            </div>
+        </div>
+        <p>On April 8, 2024, a total solar eclipse will cross North America, passing over Mexico, the United States, and Canada. A total solar eclipse happens when the Moon passes between the Sun and Earth, completely blocking the face of the Sun. The sky will darken as if it were dawn or dusk.</p>
+        <img src="images/post-image-3.jpg" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="images/thumbsup.png">
+                <img src="images/love.png">
+                <img src="images/clap.png">
+                <span class="liked-users">Manish Shrestha and 102K others </span>
+            </div>
+            <div>
+                <span>1167comments &middot; 960 shares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+            <div>
+                <img src="images/user-1.jpg" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>Send</span>
+            </div>
+        </div>
+
+       </div>
+       <div class="post">
+        <div class="post-author">
+            <img src="images/user-5.png">
+            <div>
+                <h1>Cognition Lab</h1>
+                <small>Applied AI Lab | Artificial Intelligence Laboratory</small>
+                <small>March 12</small>
+            </div>
+        </div>
+        <p>Introducing Devin, the first AI software engineer
+            And setting a new state of the art on the SWE-bench coding benchmark
+            
+            Meet Devin, the world’s first fully autonomous AI software engineer.
+            ‍
+            Devin is a tireless, skilled teammate, equally ready to build alongside you or independently complete tasks for you to review.
+            
+            With Devin, engineers can focus on more interesting problems and engineering teams can strive for more ambitious goals.</p>
+        <img src="images/post-image-4.png" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="images/thumbsup.png">
+                <img src="images/love.png">
+                <img src="images/clap.png">
+                <span class="liked-users">Amna Razzaq and 506K others</span>
+            </div>
+            <div>
+                <span>57K comments &middot; 21K shares</span>
+            </div>
+        </div>
+        <div class="post-activity">
+            <div>
+                <img src="images/user-1.jpg" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+            <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>Send</span>
+            </div>
+        </div>
+
+       </div>
+
+    </div>
+    <!---right-sidebar-->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="images/more.png" class="info-icon">
+            <h3>Trending News</h3>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10,934 readers</span>
+
+            <a href="#">Careers growing high in demand</a>
+            <span>19h ago &middot; 1,552 readers</span>
+
+            <a href="#">Less work visa for US, more for UK</a>
+            <span>1d ago &middot; 27,290 readers</span>
+
+            <a href="#">More hiring = higher confidence?</a>
+            <span>18h ago &middot; 8,208 readers</span>
+
+            <a href="#">Gautam Adani is the world's third richest</a>
+            <span>12h ago &middot; 4,205 readers</span>
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 5 principles of web design</p>
+            <div>
+                <img src="images/user-1.jpg">
+                <img src="images/mi-logo.png">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+         <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help center</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Adevrtising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>LinkedIn &#169; 2022. All right reserved.</p>
+            </div>
+         </div>
+
+    </div>
+</div>
+
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu")
+    }
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
